@@ -1,0 +1,39 @@
+\documentclass{article}
+\input{template}
+
+\begin{document}
+
+% the header section with all the links
+\section * {<name>}
+\infolist{
+    \makebox[0.5cm][c]{\faLink}     \href{<websiteurl>} {<websitetext>}
+    \makebox[0.5cm][c]{\faInbox}    \href{<emailurl>}   {<emailtext>}
+    & References available
+    \\
+    \makebox[0.5cm][c]{\faLinkedin} \href{<linkedinurl>}{<linkedintext>}
+    \makebox[0.5cm][c]{\faGithub}   \href{<githuburl>}  {<githubtext>}
+    & upon request.
+    
+}
+\divider
+
+% the profile section with the small paragraph
+\section * {Profile}
+<profile>
+\\
+\divider
+
+% list of all the jobs you've had
+\section * {Employment}
+<careers>
+\\
+\divider
+
+% list of all your education
+\section * {Education}
+<education>
+\\
+
+% peace out
+\end{document}
+

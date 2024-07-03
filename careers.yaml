@@ -1,0 +1,60 @@
+- role:    Computer Science Tutor
+  company: Self Employed
+  start:   Jun 2023
+  end:     Present
+  skills:
+    - Python
+    - Java
+    - C++
+    - MySQL
+    - JavaScript
+  achievements:
+    - Helped many GCSE and A-Level students reach A* proficiency in computer science.
+    - Assisted multiple first and second-year university students in achieving first-class grades.
+    - Provided daily tutoring to many students with diverse skill levels and backgrounds in coding.
+
+- role:    Software Developer
+  company: Magicave
+  start:   Feb 2022
+  end:     Jun 2023
+  skills:
+    - Unity
+    - Kubernetes
+    - Google Cloud Platform
+    - Docker
+    - MongoDB
+  achievements:
+    - Successfully wrote multiple no-code tools allowing designers to build levels and modify game statistics.
+    - Developed and deployed backend infrastructure for the game using Kubernetes through Google Cloud Platform.
+    - Co-wrote the character creation system for the company’s flagship game.
+
+- role:    Software Developer
+  company: Phlashweb
+  start:   Sep 2021
+  end:     Feb 2022
+  skills:
+    - Microsoft SQL Server
+    - Microsoft Azure
+    - Microsoft .NET
+    - C Sharp
+    - ASP.NET
+  achievements:
+    - Resolved multiple security vulnerabilities in the client’s customer-facing website.
+    - Restructured, migrated and redeployed the clients SQL database, improving backend performance.
+    - Maintained and improved internal tools for the client’s warehouse workers.
+
+- role:    Game Development Internship
+  company: Fruitlab
+  start:   Feb 2021
+  end:     May 2021
+  skills:
+    - Amazon Web Services
+    - Amazon RDS
+    - WebGL
+    - TypeScript
+    - React Native
+  achievements:
+    - Developed and completed a web-based game using WebGL for playback on web and mobile devices.
+    - Wrote and deployed leaderboard services using Node.js, PostgreSQL and Amazon Web Services.
+    - Collaborated with designers to ensure the game always met visual and gameplay requirements.
+

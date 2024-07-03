@@ -1,0 +1,35 @@
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[sfdefault]{roboto}
+\usepackage[T1]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% get rid of blue boxes around hyperlinks
+\hypersetup{
+	pdfborder={0 0 0}
+}
+
+% reduce the margin size because the default margin is way too large
+\geometry{
+    margin=5em
+}
+
+% quick shortcut for making dividers
+\newcommand{\divider}{\noindent\vspace{-\baselineskip}\rule{\linewidth}{0.2pt}}
+
+% create a command for generating lists with left and right columns
+\newcommand{\infolist}[1]{
+    \noindent
+    \begin{tabularx}{\textwidth}{@{} l >{\raggedleft\arraybackslash}X @{}}
+        #1
+    \end{tabularx}
+}
+
+% disable the page numbers since only one page
+\pagestyle{empty}
+

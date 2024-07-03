@@ -1,0 +1,8 @@
+# ignore the output folder
+output
+
+# watch out for vim swap files
+*.swp
+
+# i hate macos for doing this
+.DS_Store
