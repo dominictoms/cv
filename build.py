@@ -3,6 +3,9 @@ import yaml
 
 def main():
 
+	# make sure we're in the right directory
+	os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 	# read config file
 	with open('config.yaml', 'r') as file:
 		config = yaml.safe_load(file.read())
@@ -26,9 +29,10 @@ def main():
 	# attempt to get company name and address from shell
 	company = input('\nEnter company name\n> ')
 	address = input('\nEnter company address\n> ')
+	role    = input('\nEnter company role\n> ')
 
 	# write the letter!
-	write(config, profile, letter, company, address)
+	write(config, profile, letter, company, address, role)
 
 
 def handle_url(url):
@@ -55,14 +59,15 @@ def build_entry(file):
 	for job in entry:
 		role = job['role']
 		company = job['company']
+		url = handle_url(job['url'])[0]
 		start = job['start']
 		end = job['end']
-		skills = ', '.join(job['skills'])
+		skills = ' \u2022 '.join(job['skills'])
 		achievements = job['achievements']
 
 		# build the header as a string
 		header = f'''\\infolist{{
-		\\textbf{{{company}}} {role} & From {start} \\\\
+		\\href{{{url}}}{{\\textbf{{{company}}}}} {role} & From {start} \\\\
 		\\textcolor{{darkgray}}{{{skills}}} & until {end}
 		}}
 		\\noindent
@@ -75,7 +80,7 @@ def build_entry(file):
 		# combine the element into one string
 		job_entry_content = f'''
 		{header}
-		{achievement_items}
+        {achievement_items}
 		\\end{{itemize}}
 		'''
 
@@ -86,7 +91,7 @@ def build_entry(file):
 	return entry_content
 
 
-def write(config, profile, letter, company, address):
+def write(config, profile, letter, company, address, role):
 
 	# open specified letter text file
 	with open(f'letters/{letter}', 'r') as file:
@@ -95,6 +100,7 @@ def write(config, profile, letter, company, address):
 	# add company name and address to letter
 	letter = letter.replace('<company>', company)
 	letter = letter.replace('<address>', address)
+	letter = letter.replace('<role>', role)
 
 	# store the letter raw text for a text file output
 	letter_txt = f'{company}\n{address}\n\n{letter}'
@@ -110,7 +116,6 @@ def write(config, profile, letter, company, address):
 	website_url, website_text = handle_url(config['website'])
 	linkedin_url, linkedin_text = handle_url(config['linkedin'])
 	github_url, github_text = handle_url(config['github'])
-
 
 	# get cv profile
 	with open(f'profiles/{profile}', 'r') as file:
@@ -176,10 +181,8 @@ def write(config, profile, letter, company, address):
 	# change to latex folder
 	os.chdir('latex')
 
-	# compile the cv
+	# compile the cv and cover letter
 	os.system(f'latexmk -pdf -interaction=nonstopmode -output-directory=../output -jobname=cv {temp_cv_name}')
-
-	# compile the cover letter
 	os.system(f'latexmk -pdf -interaction=nonstopmode -output-directory=../output -jobname=cover {temp_cover_name}')
 
 	# cleanup

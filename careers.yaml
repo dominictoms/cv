@@ -1,27 +1,29 @@
 - role:    Computer Science Tutor
   company: Self Employed
   start:   Jun 2023
-  end:     Present
+  end:     present
+  url:     domtoms.com
   skills:
     - Python
-    - Java
-    - C++
-    - MySQL
     - JavaScript
+    - Haskell
+    - React
+    - MySQL
   achievements:
     - Helped many GCSE and A-Level students reach A* proficiency in computer science.
     - Assisted multiple first and second-year university students in achieving first-class grades.
     - Provided daily tutoring to many students with diverse skill levels and backgrounds in coding.
 
-- role:    Software Developer
+- role:    Game Developer
   company: Magicave
   start:   Feb 2022
   end:     Jun 2023
+  url:     magicave.io
   skills:
     - Unity
     - Kubernetes
-    - Google Cloud Platform
     - Docker
+    - GCP
     - MongoDB
   achievements:
     - Successfully wrote multiple no-code tools allowing designers to build levels and modify game statistics.
@@ -30,14 +32,15 @@
 
 - role:    Software Developer
   company: Phlashweb
-  start:   Sep 2021
+  start:   Aug 2021
   end:     Feb 2022
+  url:     linkedin.com/company/phlashweb
   skills:
-    - Microsoft SQL Server
-    - Microsoft Azure
-    - Microsoft .NET
-    - C Sharp
+    - C\#
+    - .NET
     - ASP.NET
+    - Azure
+    - SQL Server
   achievements:
     - Resolved multiple security vulnerabilities in the client’s customer-facing website.
     - Restructured, migrated and redeployed the clients SQL database, improving backend performance.
@@ -46,15 +49,16 @@
 - role:    Game Development Internship
   company: Fruitlab
   start:   Feb 2021
-  end:     May 2021
+  end:     Aug 2021
+  url:     fruitlab.com
   skills:
-    - Amazon Web Services
-    - Amazon RDS
-    - WebGL
     - TypeScript
     - React Native
+    - WebGL
+    - AWS
+    - RDS
   achievements:
     - Developed and completed a web-based game using WebGL for playback on web and mobile devices.
-    - Wrote and deployed leaderboard services using Node.js, PostgreSQL and Amazon Web Services.
+    - Wrote and deployed leaderboard services using TypeScript, Amazon Web Services and Amazon RDS.
     - Collaborated with designers to ensure the game always met visual and gameplay requirements.
 

@@ -2,14 +2,15 @@
   company: University of East Anglia
   start:   Sep 2020
   end:     Jun 2024
+  url:     www.uea.ac.uk
   skills:
     - Java
-    - C++
     - Node.js
-    - Python
-    - PostgreSQL
+    - C++
+    - Unix
+    - Postgres
   achievements:
     - Served as vice president of the Computer Science Society, organised multiple events for the society.
-    - Handled promotional material and social media for the Electronic Music Society, improving event turnout rates.
+    - Handled promotional material and social media for the Electronic Music Society, improved event turnout rates.
     - Wrote my dissertation on cellular automata and John Conway’s Game of Life, exploring computational theory.
 

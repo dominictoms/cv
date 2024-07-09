@@ -1,5 +1,12 @@
-I write code.
+I am writing to express my interest in the <role> position available at <company>. As a full stack developer with experience in web development, game development, cloud computing, backend infrastructure, and database management, I believe my skills will integrate seamlessly and contribute effectively to your team.
 
-I am good at that.
+I recently graduated from the University of East Anglia with a Bachelor’s degree in Computing Science and have over two years of industry experience working for various companies in numerous fields. Additionally, I have worked part-time as a private tutor, teaching programming to GCSE, A-Level, and first and second-year university students.
 
-You should hire me at <company>.
+Over the course of my career, I have gained expertise in multiple high-level programming languages, such as Java, C++, Python, Haskell, C# and JavaScript. I have used these languages for a variety of purposes, such as developing interactive games, maintaining client-side websites, building DevOps tools, and writing backend infrastructure.
+
+Moreover, I have experience with major cloud computing platforms such as Amazon Web Services, Google Cloud Platform, and Microsoft Azure. I have utilised these platforms to host backend infrastructure for numerous applications, using tools like Docker and Kubernetes to containerize and deploy these applications.
+
+In addition to this, I am proficient in many database languages such as MySQL, MongoDB, PostgreSQL, and Microsoft SQL Server. This experience goes hand in hand with my backend knowledge. Throughout my career, I have designed numerous database schemas, alongside restructuring and migrating multiple databases.
+
+I am excited about the opportunity to contribute my skills and experience to your team at <company>.
+
