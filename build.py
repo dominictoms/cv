@@ -80,7 +80,7 @@ def build_entry(file):
 		# combine the element into one string
 		job_entry_content = f'''
 		{header}
-        {achievement_items}
+		{achievement_items}
 		\\end{{itemize}}
 		'''
 
