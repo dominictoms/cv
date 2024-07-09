@@ -61,7 +61,7 @@ Select a profile to use
 >
 ```
 
-For an example, entering the number `1` here will generate the CV with the default profile.
+For an example, entering the number "1" in the example above will generate the CV with the default profile.
 
 ## Cover Letter Generation
 
